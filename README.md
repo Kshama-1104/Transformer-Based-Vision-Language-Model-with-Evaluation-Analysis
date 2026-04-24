@@ -4,6 +4,18 @@
 
 ---
 
+## 🚀 Project Demo
+
+<p align="center">
+  <img src="./assets/ui-home.png" width="700"/>
+</p>
+
+<p align="center">
+  <img src="./assets/ui-result.png" width="700"/>
+</p>
+
+---
+
 ## 🚀 Overview
 
 This project implements a **state-of-the-art multimodal AI system** that generates natural language descriptions from images.
@@ -39,33 +51,52 @@ It compares:
 
 ## 🏗️ System Architecture
 
-```mermaid
-flowchart LR
-    A[Image Input] --> B[Feature Extraction]
-    B --> C1[CNN + LSTM]
-    B --> C2[Transformer BLIP]
-    C1 --> D[Caption Output]
-    C2 --> D
-    D --> E[Evaluation Metrics]
-```
+<p align="center">
+  <img src="./assets/architecture.png" width="700"/>
+</p>
 
 ---
 
-## 🔬 Models
+## 🔬 Model Architectures
 
-### 🔹 CNN + LSTM
+### 🔹 CNN + LSTM (Baseline)
+
+<p align="center">
+  <img src="./assets/cnn-lstm.png" width="700"/>
+</p>
 
 * InceptionV3 + LSTM
 * Encoder-decoder architecture
 
+---
+
 ### 🔹 Transformer (BLIP)
+
+<p align="center">
+  <img src="./assets/transformer.png" width="700"/>
+</p>
 
 * Vision-Language Transformer
 * Attention-based caption generation
 
 ---
 
-## 📊 Evaluation Metrics
+## ⚙️ Caption Generation (Beam Search)
+
+<p align="center">
+  <img src="./assets/beam-search.png" width="700"/>
+</p>
+
+* Generates better captions than greedy decoding
+* Explores multiple sequences
+
+---
+
+## 📊 Performance Evaluation
+
+<p align="center">
+  <img src="./assets/metrics.png" width="800"/>
+</p>
 
 | Metric | CNN + LSTM | Transformer |
 | ------ | ---------- | ----------- |
@@ -76,27 +107,43 @@ flowchart LR
 
 ---
 
-## 📈 Visualizations
+## 📸 Qualitative Results
 
-### Caption Length Distribution
-
-![Distribution](assets/distribution.png)
-
-### Training Loss Curve
-
-![Loss](assets/loss.png)
-
-### Metric Comparison
-
-![Metrics](assets/metrics.png)
+<p align="center">
+  <img src="./assets/results.png" width="800"/>
+</p>
 
 ---
 
-## 📸 Sample Outputs
+## ❌ Error Analysis
 
-| Image | CNN + LSTM    | Transformer                            |
-| ----- | ------------- | -------------------------------------- |
-| 🐕    | "dog running" | "a dog running through a grassy field" |
+<p align="center">
+  <img src="./assets/error-analysis.png" width="800"/>
+</p>
+
+---
+
+## 🔍 Attention Visualization
+
+<p align="center">
+  <img src="./assets/attention.png" width="800"/>
+</p>
+
+---
+
+## 🧪 Ablation Study
+
+<p align="center">
+  <img src="./assets/ablation.png" width="800"/>
+</p>
+
+---
+
+## 🏆 Comparison with State-of-the-Art
+
+<p align="center">
+  <img src="./assets/comparison.png" width="800"/>
+</p>
 
 ---
 
@@ -118,22 +165,6 @@ flowchart LR
 
 ---
 
-## 🧪 Experimental Insights
-
-* Transformer improves contextual understanding
-* Beam search generates more fluent captions
-* Multimodal models outperform traditional architectures
-
----
-
-## 🚧 Future Work
-
-* Attention heatmaps
-* Multilingual captioning
-* Real-time deployment
-
----
-
 ## 📌 Conclusion
 
-This project demonstrates how modern transformer-based models outperform traditional architectures in multimodal AI tasks.
+This project demonstrates how modern transformer-based models outperform traditional architectures in multimodal AI tasks like image captioning.
